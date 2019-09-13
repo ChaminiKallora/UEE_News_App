@@ -5,34 +5,101 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/read_later"
+            android:icon="@drawable/read_later"
             android:title="Read Later" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/most_read"
+            android:icon="@drawable/most_read"
             android:title="Most Read" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
-    </group>
+            android:id="@+id/news"
+            android:icon="@drawable/news"
+            android:title="News" >
 
-    <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
+                android:id="@+id/main_news"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:title="Main News" />
+            <item
+                android:id="@+id/entertainment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Entertainment" />
+            <item
+                android:id="@+id/sports"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sports" />
+            <item
+                android:id="@+id/world"
+                android:icon="@drawable/ic_menu_send"
+                android:title="world" />
+            <item
+                android:id="@+id/business"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Business" />
+            <item
+                android:id="@+id/politics"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Politics" />
+            <item
+                android:id="@+id/science"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Science" />
+            <item
+                android:id="@+id/fashion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Fashion" />
+            <item
+                android:id="@+id/health"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Health" />
         </menu>
-    </item>
+        </item>
+
+
+        <item
+            android:id="@+id/my_feeds"
+            android:icon="@drawable/my_feeds"
+            android:title="My feeds" >
+
+        <menu>
+        <item
+            android:id="@+id/play_station"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Play Station" />
+        </menu>
+        </item>
+        <item
+            android:id="@+id/action_menu_divider"
+            android:title="  "
+            >
+        <menu>        <item
+            android:id="@+id/add_feeds"
+            android:icon="@drawable/add_feeds"
+            android:title="Add Feeds" />
+        </menu>
+        </item>
+        <item
+            android:id="@+id/add_to_home"
+            android:icon="@drawable/add_to_home"
+            android:title="Add to home" />
+
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/information"
+            android:icon="@drawable/information"
+            android:title="Information" />
+        <item
+            android:id="@+id/send_feedback"
+            android:icon="@drawable/send_feedback"
+            android:title="Send Feedback" />
+
+
+    </group>
 
 </menu>
