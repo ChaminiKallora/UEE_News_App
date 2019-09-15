@@ -4,9 +4,11 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.os.PersistableBundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -18,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,4 +76,53 @@ public class MainActivity extends AppCompatActivity {
 //
 //
 //    }
+
+
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//    }
+
+
+
+
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//    }
+
+    public void displayToast(View view) {
+        switch (view.getId()) {
+            case R.id.btn_business:
+                Toast.makeText(this, "Shourtcut business created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_entertainment:
+                Toast.makeText(this, "Shourtcut entertainment created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_fashion:
+                Toast.makeText(this, "Shourtcut fashion created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_health:
+                Toast.makeText(this, "Shourtcut health created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_main_news:
+                Toast.makeText(this, "Shourtcut main news created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_politics:
+                Toast.makeText(this, "Shourtcut politics created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_science:
+                Toast.makeText(this, "Shourtcut science created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_sports:
+                Toast.makeText(this, "Shourtcut sports created!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_world:
+                Toast.makeText(this, "Shourtcut world created!", Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
 }
